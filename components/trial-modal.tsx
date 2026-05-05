@@ -197,12 +197,14 @@ export function TrialModal({
       <style>{`
         .lp-modal-overlay {
           position: fixed; inset: 0; z-index: 200;
-          display: flex; align-items: center; justify-content: center;
-          padding: 20px; background: rgba(17,17,17,0.72);
+          display: flex; align-items: flex-start; justify-content: center;
+          padding: 40px 20px; background: rgba(17,17,17,0.72);
+          overflow-y: auto;
         }
         .lp-modal {
           position: relative;
           width: 100%; max-width: 680px;
+          margin: auto;
           background: ${BONE}; color: ${BLACK};
           border-radius: 12px; padding: 40px 48px;
           box-shadow: 0 24px 80px rgba(0,0,0,0.35);
@@ -327,8 +329,34 @@ export function TrialModal({
         }
 
         @media (max-width: 640px) {
-          .lp-modal { padding: 32px 24px; border-radius: 12px; }
-          .lp-form-row { grid-template-columns: 1fr; }
+          .lp-modal-overlay {
+            padding: 20px 12px;
+          }
+          .lp-modal { 
+            padding: 32px 20px; 
+            border-radius: 12px; 
+          }
+          .lp-form-row { 
+            grid-template-columns: 1fr; 
+            gap: 16px;
+          }
+          .lp-modal-form {
+            gap: 16px;
+          }
+          .lp-modal-title { 
+            font-size: 26px; 
+          }
+          .lp-modal-subtitle { 
+            font-size: 14px; 
+            margin-bottom: 24px; 
+          }
+          .lp-form-submit { 
+            padding: 16px 20px; 
+            font-size: 18px; 
+          }
+          .lp-modal-close {
+            top: 12px; right: 12px;
+          }
         }
       `}</style>
     </div>
