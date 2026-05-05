@@ -76,6 +76,9 @@ const T = {
       { title: "Encrypted at rest", desc: "AES-256 encryption across all stored data" },
       { title: "Encrypted in transit", desc: "HTTPS/TLS on every connection" },
       { title: "Mexico-based hosting", desc: "All customer data stored in Mexico" },
+      { title: "Your data, your control", desc: "Export or delete your data at any time. No lock-in, no questions." },
+      { title: "No selling or sharing", desc: "Firm and client data is never shared with third parties." },
+      { title: "Transparent by design", desc: "AI steps show sources, changes, and rationale." },
     ],
     trialTitle: "Get in touch",
     trialBody: "Leave us your information and we'll contact you shortly.",
@@ -149,6 +152,9 @@ const T = {
       { title: "Encriptado en reposo", desc: "Encriptación AES-256 en todos los datos almacenados" },
       { title: "Encriptado en tránsito", desc: "HTTPS/TLS en cada conexión" },
       { title: "Hosting en México", desc: "Todos los datos de clientes almacenados en México" },
+      { title: "Tus datos, tu control", desc: "Exporta o elimina tus datos cuando quieras. Sin ataduras ni preguntas." },
+      { title: "Prohibida su venta o distribución.", desc: "Los datos de la empresa y de los clientes nunca se comparten con terceros." },
+      { title: "Transparente por diseño", desc: "Los pasos de la IA muestran las fuentes, los cambios y la justificación." },
     ],
     trialTitle: "Contáctanos",
     trialBody: "Déjanos tu información y te contactaremos pronto.",
@@ -187,9 +193,9 @@ export default function Landing() {
         }}
       >
         <div className="lp-nav-brand">
-          <svg 
-            viewBox="0 0 100 100" 
-            className="lp-nav-logo" 
+          <svg
+            viewBox="0 0 100 100"
+            className="lp-nav-logo"
             style={{ color: scrolled ? BLACK : "#fff" }}
           >
             <path d="M 50 5 L 89 27.5 L 89 72.5 L 50 95 L 11 72.5 L 11 27.5 Z" fill="none" stroke="currentColor" strokeWidth="8" strokeLinejoin="round" />
