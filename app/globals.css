@@ -1,0 +1,35 @@
+@import 'tailwindcss';
+@import 'tw-animate-css';
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: #ffffff;
+  --foreground: #111111;
+  --bone: #ffffff;
+  --black: #111111;
+  --muted: rgb(136, 136, 136);
+  --radius: 0.625rem;
+}
+
+@theme inline {
+  --font-sans: var(--font-lato), 'Lato', sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-bone: var(--bone);
+  --color-black: var(--black);
+  --color-muted: var(--muted);
+}
+
+@layer base {
+  * {
+    box-sizing: border-box;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    margin: 0;
+    background: var(--bone);
+  }
+}
