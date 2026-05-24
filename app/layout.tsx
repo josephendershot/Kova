@@ -10,7 +10,7 @@ const lato = Lato({
 });
 
 export const metadata: Metadata = {
-  title: 'Kova - The new era of accounting',
+  title: 'Accura - The new era of accounting',
   description: 'Your accounting running on autopilot. AI-powered platform for Mexican accounting firms.',
   generator: '',
   icons: {
