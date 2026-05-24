@@ -26,19 +26,38 @@ const T = {
     cards: [
       {
         title: "Agents that do the work.",
-        body: "Kova operates in the background, executing accounting workflows from start to finish and updating you at key moments. The result is delivered ready for review, with the quality you'd expect from an experienced accountant.",
+        body: "Accura operates in the background, executing accounting workflows from start to finish and updating you at key moments. The result is delivered ready for review, with the quality you'd expect from an experienced accountant.",
       },
       {
         title: "Works the way you do.",
-        body: "Kova adapts to your firm's standards, your practice and each engagement. It's built on solid accounting principles and adjusts to how your team actually works, delivering accurate results that meet what your clients expect.",
+        body: "Accura adapts to your firm's standards, your practice and each engagement. It's built on solid accounting principles and adjusts to how your team actually works, delivering accurate results that meet what your clients expect.",
       },
       {
         title: "Doers become reviewers.",
-        body: "When Kova handles execution, your accountants shift from doing the work to reviewing it — managing agents, applying judgment and advising clients. Better output, fewer review cycles and a team focused on what truly matters.",
+        body: "When Accura handles execution, your accountants shift from doing the work to reviewing it — managing agents, applying judgment and advising clients. Better output, fewer review cycles and a team focused on what truly matters.",
       },
       {
         title: "Scale your revenue capacity.",
-        body: "Firms are at capacity: more client demand, compressed margins and scarce experienced resources. Kova gives your team the capacity to serve more clients and take on more complex engagements.",
+        body: "Firms are at capacity: more client demand, compressed margins and scarce experienced resources. Accura gives your team the capacity to serve more clients and take on more complex engagements.",
+      },
+    ],
+    howItWorksTitle: "Up and running in days, not months.",
+    howItWorksSub: "No complex integrations. No disruption to your existing workflow.",
+    howItWorksSteps: [
+      {
+        number: "01",
+        title: "Connect your firm.",
+        body: "Link your SAT credentials, ERP, and document sources in minutes. Accura ingests your CFDIs, bank statements, and prior-period data automatically.",
+      },
+      {
+        number: "02",
+        title: "Agents get to work.",
+        body: "Accura's agents classify, reconcile, and prepare filings autonomously — operating on Mexican tax logic, not generic AI. You set the rules; they execute.",
+      },
+      {
+        number: "03",
+        title: "You review and approve.",
+        body: "Every output lands in your review queue with a full audit trail. Accept, adjust, or send back. Your signature, your judgment — Accura does the legwork.",
       },
     ],
     manifestoTitle:
@@ -48,7 +67,7 @@ const T = {
     manifestoP2:
       "And yet, accounting practice remains largely manual. Not because accountants aren't capable — but because the tools never rose to the level of Latin America's most complex tax regime.",
     manifestoP3:
-      "We are a team of accountants and engineers who lived that gap firsthand. Kova was born from that: from the conviction that if the information already exists in structured format, re-entering it by hand is a solved problem — just solved badly.",
+      "We are a team of accountants and engineers who lived that gap firsthand. Accura was born from that: from the conviction that if the information already exists in structured format, re-entering it by hand is a solved problem — just solved badly.",
     manifestoP4:
       "We build agents that do real accounting work: they classify, reconcile, detect inconsistencies and prepare information for filing — operating on the logic of the Mexican tax regime, not on a generic AI layer.",
     manifestoP5:
@@ -83,7 +102,7 @@ const T = {
     trialTitle: "Get in touch",
     trialBody: "Leave us your information and we'll contact you shortly.",
     trialAccept: "Send",
-    footerCopy: "© 2026 Kova",
+    footerCopy: "© 2026 Accura",
   },
   es: {
     navCta: "Contáctanos →",
@@ -102,19 +121,38 @@ const T = {
     cards: [
       {
         title: "Agentes que hacen el trabajo.",
-        body: "Kova opera en segundo plano, ejecutando flujos de trabajo contables de principio a fin y actualizándote en momentos clave. El resultado se entrega listo para revisión, con la calidad que esperarías de un contador experimentado.",
+        body: "Accura opera en segundo plano, ejecutando flujos de trabajo contables de principio a fin y actualizándote en momentos clave. El resultado se entrega listo para revisión, con la calidad que esperarías de un contador experimentado.",
       },
       {
         title: "Trabaja como tú lo haces.",
-        body: "Kova se adapta a los estándares de tu despacho, tu práctica y cada compromiso. Está construido sobre principios contables sólidos y se ajusta a cómo trabaja realmente tu equipo, entregando resultados precisos que cumplen con lo que tus clientes esperan.",
+        body: "Accura se adapta a los estándares de tu despacho, tu práctica y cada compromiso. Está construido sobre principios contables sólidos y se ajusta a cómo trabaja realmente tu equipo, entregando resultados precisos que cumplen con lo que tus clientes esperan.",
       },
       {
         title: "Los ejecutores se vuelven revisores.",
-        body: "Cuando Kova se encarga de la ejecución, tus contadores pasan de hacer el trabajo a revisarlo: gestionando agentes, aplicando criterio y asesorando clientes. Mejor producto, menos ciclos de revisión y un equipo enfocado en lo que realmente importa.",
+        body: "Cuando Accura se encarga de la ejecución, tus contadores pasan de hacer el trabajo a revisarlo: gestionando agentes, aplicando criterio y asesorando clientes. Mejor producto, menos ciclos de revisión y un equipo enfocado en lo que realmente importa.",
       },
       {
         title: "Amplía tu capacidad de ingresos.",
-        body: "Los despachos están al límite: más demanda de clientes, márgenes apretados y pocos recursos experimentados. Kova le da a tu equipo la capacidad para atender más clientes y compromisos más complejos.",
+        body: "Los despachos están al límite: más demanda de clientes, márgenes apretados y pocos recursos experimentados. Accura le da a tu equipo la capacidad para atender más clientes y compromisos más complejos.",
+      },
+    ],
+    howItWorksTitle: "Funcionando en días, no en meses.",
+    howItWorksSub: "Sin integraciones complejas. Sin interrumpir tu flujo de trabajo actual.",
+    howItWorksSteps: [
+      {
+        number: "01",
+        title: "Conecta tu despacho.",
+        body: "Vincula tus credenciales del SAT, tu ERP y fuentes de documentos en minutos. Accura ingiere tus CFDIs, estados de cuenta y datos de períodos anteriores de forma automática.",
+      },
+      {
+        number: "02",
+        title: "Los agentes entran en acción.",
+        body: "Los agentes de Accura clasifican, concilian y preparan presentaciones de forma autónoma — operando sobre la lógica fiscal mexicana, no sobre IA genérica. Tú defines las reglas; ellos ejecutan.",
+      },
+      {
+        number: "03",
+        title: "Tú revisas y apruebas.",
+        body: "Cada resultado llega a tu cola de revisión con un rastro de auditoría completo. Acepta, ajusta o regresa. Tu firma, tu criterio — Accura hace el trabajo pesado.",
       },
     ],
     manifestoTitle:
@@ -124,7 +162,7 @@ const T = {
     manifestoP2:
       "Y aun así, la práctica contable sigue siendo en gran parte manual. No porque los contadores no sean capaces — sino porque las herramientas nunca estuvieron a la altura del régimen fiscal más complejo de América Latina.",
     manifestoP3:
-      "Somos un equipo de contadores e ingenieros que vivimos ese desfase de primera mano. Kova nació de ahí: de la convicción de que si la información ya existe en formato estructurado, re-capturarla a mano es un problema resuelto — solo que mal.",
+      "Somos un equipo de contadores e ingenieros que vivimos ese desfase de primera mano. Accura nació de ahí: de la convicción de que si la información ya existe en formato estructurado, re-capturarla a mano es un problema resuelto — solo que mal.",
     manifestoP4:
       "Construimos agentes que hacen trabajo contable real: clasifican, concilian, detectan inconsistencias y preparan información para presentación — operando sobre la lógica del régimen mexicano, no sobre una capa genérica de IA.",
     manifestoP5:
@@ -159,7 +197,7 @@ const T = {
     trialTitle: "Contáctanos",
     trialBody: "Déjanos tu información y te contactaremos pronto.",
     trialAccept: "Enviar",
-    footerCopy: "© 2026 Kova",
+    footerCopy: "© 2026 Accura",
   },
 };
 
@@ -205,7 +243,7 @@ export default function Landing() {
             className="lp-nav-name"
             style={{ color: scrolled ? BLACK : "#fff" }}
           >
-            Kova
+            Accura
           </span>
         </div>
         <div className="lp-nav-actions">
@@ -298,10 +336,39 @@ export default function Landing() {
         })}
       </section>
 
+      {/* ── How It Works ── */}
+      <section className="lp-section-bone lp-hiw">
+        <div className="lp-hiw-wrap">
+          <p className="lp-body-text lp-text-center lp-hiw-title">{t.howItWorksTitle}</p>
+          <p className="lp-body-text lp-text-center lp-hiw-sub">{t.howItWorksSub}</p>
+          <div className="lp-hiw-steps">
+            {t.howItWorksSteps.map((step) => (
+              <div key={step.number} className="lp-hiw-step">
+                <span className="lp-hiw-number">{step.number}</span>
+                <h3 className="lp-hiw-step-title">
+                  {(() => {
+                    const ls = step.title.lastIndexOf(" ");
+                    const h = ls > -1 ? step.title.slice(0, ls) : step.title;
+                    const tl = ls > -1 ? step.title.slice(ls + 1) : "";
+                    return (
+                      <>
+                        {h}
+                        {tl ? <span className="lp-italic"> {tl}</span> : null}
+                      </>
+                    );
+                  })()}
+                </h3>
+                <p className="lp-hiw-step-body">{step.body}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* ── Manifesto ── */}
       <section className="lp-section-black lp-manifesto">
         <div className="lp-manifesto-container">
-          {/* Left image - paste URL here */}
+          {/* Left image */}
           <div className="lp-manifesto-image lp-manifesto-image-left">
             <img src="/manifesto1.png" alt="Manifesto illustration" className="lp-manifesto-img" />
           </div>
@@ -324,7 +391,7 @@ export default function Landing() {
             <p className="lp-manifesto-p lp-manifesto-p-dim">{t.manifestoP5}</p>
           </div>
 
-          {/* Right image - paste URL here */}
+          {/* Right image */}
           <div className="lp-manifesto-image lp-manifesto-image-right">
             <img src="/manifesto2.png" alt="Manifesto illustration" className="lp-manifesto-img" />
           </div>
@@ -399,7 +466,7 @@ export default function Landing() {
               <path d="M 50 5 L 89 27.5 L 89 72.5 L 50 95 L 11 72.5 L 11 27.5 Z" fill="none" stroke="currentColor" strokeWidth="8" strokeLinejoin="round" />
               <path d="M 50 95 L 50 50 L 11 27.5" fill="none" stroke="currentColor" strokeWidth="8" strokeLinejoin="round" strokeLinecap="round" />
             </svg>
-            <span className="lp-footer-name">Kova</span>
+            <span className="lp-footer-name">Accura</span>
           </div>
           <div className="lp-footer-right">
             <button onClick={openTrial} className="lp-btn-footer">
@@ -582,6 +649,45 @@ export default function Landing() {
 
         /* ── Cards ── */
         .lp-cards-section { padding-bottom: 40px; }
+
+        /* ── How It Works ── */
+        .lp-hiw { padding: 80px 20px; border-top: 1px solid rgba(136,136,136,0.12); }
+        .lp-hiw-wrap { max-width: 1100px; margin: 0 auto; }
+        .lp-hiw-title { font-weight: 400; color: ${BLACK}; margin-bottom: 8px; }
+        .lp-hiw-sub { color: rgb(136,136,136); margin-bottom: 64px !important; }
+        .lp-hiw-steps {
+          display: grid;
+          grid-template-columns: repeat(3, 1fr);
+          gap: 0;
+        }
+        .lp-hiw-step {
+          padding: 0 40px;
+          border-left: 1px solid rgba(136,136,136,0.18);
+        }
+        .lp-hiw-step:first-child { border-left: none; padding-left: 0; }
+        .lp-hiw-step:last-child { padding-right: 0; }
+        .lp-hiw-number {
+          display: block;
+          font-size: 11px;
+          font-weight: 700;
+          letter-spacing: 0.1em;
+          color: rgba(136,136,136,0.5);
+          margin-bottom: 16px;
+        }
+        .lp-hiw-step-title {
+          margin: 0 0 14px;
+          font-size: clamp(20px, 2.4vw, 30px);
+          font-weight: 700;
+          color: ${BLACK};
+          letter-spacing: -0.04em;
+          line-height: 1.1;
+        }
+        .lp-hiw-step-body {
+          margin: 0;
+          font-size: clamp(14px, 1.4vw, 17px);
+          line-height: 1.8;
+          color: rgb(136,136,136);
+        }
 
         /* ── Manifesto ── */
         .lp-manifesto { padding: 80px 0; overflow: hidden; }
@@ -806,6 +912,11 @@ export default function Landing() {
           .lp-practice-grid { grid-template-columns: repeat(2, 1fr); }
           .lp-practice-item { padding: 20px 12px; }
 
+          .lp-hiw { padding: 60px 16px; }
+          .lp-hiw-steps { grid-template-columns: 1fr; gap: 48px; }
+          .lp-hiw-step { padding: 0; border-left: none; border-top: 1px solid rgba(136,136,136,0.18); padding-top: 32px; }
+          .lp-hiw-step:first-child { border-top: none; padding-top: 0; }
+
           .lp-manifesto { padding: 60px 16px; }
           .lp-manifesto-title { margin-bottom: 32px; }
           .lp-manifesto-image { display: none; }
@@ -827,6 +938,9 @@ export default function Landing() {
           .lp-hero-inner { flex-direction: column; align-items: flex-start; gap: 24px; }
           .lp-btn-hero { align-self: stretch; text-align: center; }
           .lp-practice-grid { grid-template-columns: repeat(2, 1fr); }
+          .lp-hiw-steps { grid-template-columns: 1fr; gap: 40px; }
+          .lp-hiw-step { padding: 0 0 0 32px; }
+          .lp-hiw-step:first-child { padding-left: 0; }
           .lp-manifesto-image { display: none; }
           .lp-certifications-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 24px; }
           .lp-security-features { grid-template-columns: repeat(2, 1fr); gap: 40px 24px; }

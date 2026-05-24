@@ -38,7 +38,7 @@ const modalT = {
     duplicateEmail: "This email is already on the waitlist.",
     genericError: "Something went wrong. Please try again.",
     privacy: "We will use the information you provide to respond to your inquiry and communicate with you about our services. We do not sell or share personal information. For more information, see our",
-    privacyLink: "Privacy Policy",
+    privacyLink: "",
   },
   es: {
     title: "Únete a la",
@@ -55,7 +55,7 @@ const modalT = {
     duplicateEmail: "Este correo ya está en la lista de espera.",
     genericError: "Algo salió mal. Por favor intenta de nuevo.",
     privacy: "Usaremos la información que proporciones para responder a tu consulta y comunicarnos contigo sobre nuestros servicios. No vendemos ni compartimos información personal. Para más información, consulta nuestra",
-    privacyLink: "Política de Privacidad",
+    privacyLink: "",
   },
 };
 
