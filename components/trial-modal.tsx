@@ -26,7 +26,7 @@ const modalT = {
   en: {
     title: "Join the",
     titleItalic: "waitlist",
-    subtitle: "Share your information to join our waitlist for access to Kova.",
+    subtitle: "Share your information to join our waitlist for access to Accura.",
     nameLabel: "Name",
     emailLabel: "Work Email",
     companyLabel: "Name of Company",
@@ -43,7 +43,7 @@ const modalT = {
   es: {
     title: "Únete a la",
     titleItalic: "lista de espera",
-    subtitle: "Comparte tu información para unirte a nuestra lista de espera y acceder a Kova.",
+    subtitle: "Comparte tu información para unirte a nuestra lista de espera y acceder a Accura.",
     nameLabel: "Nombre",
     emailLabel: "Correo de trabajo",
     companyLabel: "Nombre de la empresa",
