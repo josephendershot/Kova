@@ -10,7 +10,7 @@ interface DemoVideoProps {
 
 export function DemoVideo({
   src,
-  poster = "/demo-poster.jpg",
+  poster = "/portada.jpg",
   className,
 }: DemoVideoProps) {
   const videoRef = useRef<HTMLVideoElement>(null);
@@ -57,6 +57,8 @@ export function DemoVideo({
             src={poster}
             alt=""
             className={`${className ?? ""} demo-video-poster`}
+            loading="eager"
+            decoding="async"
           />
           <button
             type="button"
@@ -71,7 +73,8 @@ export function DemoVideo({
 
       <style>{`
         .demo-video-wrap {
-          position: relative;
+          position: absolute;
+          inset: 0;
           width: 100%;
           height: 100%;
         }

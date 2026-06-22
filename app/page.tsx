@@ -313,7 +313,7 @@ export default function Landing() {
           <DemoVideo
             key={lang}
             className="lp-demo-video"
-            poster="/demo-poster.jpg"
+            poster="/portada.jpg"
             src={lang === "es" ? "/demo-es.mp4" : "/demo.mp4"}
           />
         </div>
@@ -615,6 +615,7 @@ export default function Landing() {
         .lp-mb52 { margin-bottom: 40px; }
         .lp-text-center { text-align: center; }
         .lp-screenshot {
+          position: relative;
           margin: 40px auto 0;
           width: 90vw; max-width: 1280px;
           aspect-ratio: 16/9;
