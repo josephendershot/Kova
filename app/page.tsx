@@ -3,6 +3,7 @@
 import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { CardItem } from "@/components/card-item";
+import { DemoVideo } from "@/components/demo-video";
 import { LazyVideo } from "@/components/lazy-video";
 
 const TrialModal = dynamic(
@@ -309,12 +310,10 @@ export default function Landing() {
           <p className="lp-body-text lp-mt18 lp-highlight">{t.problemP3}</p>
         </div>
         <div className="lp-screenshot">
-          <LazyVideo
+          <DemoVideo
             key={lang}
             className="lp-demo-video"
-            controls
-            playsInline
-            preload="none"
+            poster="/demo-poster.jpg"
             src={lang === "es" ? "/demo-es.mp4" : "/demo.mp4"}
           />
         </div>
