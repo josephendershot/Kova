@@ -1,8 +1,14 @@
 "use client";
 
+import dynamic from "next/dynamic";
 import { useEffect, useState } from "react";
 import { CardItem } from "@/components/card-item";
-import { TrialModal } from "@/components/trial-modal";
+import { LazyVideo } from "@/components/lazy-video";
+
+const TrialModal = dynamic(
+  () => import("@/components/trial-modal").then((m) => m.TrialModal),
+  { ssr: false }
+);
 
 const BONE = "#ffffff";
 const BLACK = "#111";
@@ -278,6 +284,7 @@ export default function Landing() {
           muted
           loop
           playsInline
+          preload="auto"
           src="/hero.mp4"
         />
         <div className="lp-hero-overlay" />
@@ -302,11 +309,13 @@ export default function Landing() {
           <p className="lp-body-text lp-mt18 lp-highlight">{t.problemP3}</p>
         </div>
         <div className="lp-screenshot">
-          <video
+          <LazyVideo
+            key={lang}
             className="lp-demo-video"
             controls
             playsInline
-            src="/demo.mp4"
+            preload="none"
+            src={lang === "es" ? "/demo-es.mp4" : "/demo.mp4"}
           />
         </div>
       </section>
@@ -367,34 +376,22 @@ export default function Landing() {
 
       {/* ── Manifesto ── */}
       <section className="lp-section-black lp-manifesto">
-        <div className="lp-manifesto-container">
-          {/* Left image */}
-          <div className="lp-manifesto-image lp-manifesto-image-left">
-            <img src="/manifesto1.png" alt="Manifesto illustration" className="lp-manifesto-img" />
-          </div>
-
-          <div className="lp-manifesto-wrap">
-            <h2 className="lp-manifesto-title">
-              {lang === "en" ? (
-                <>Mexican <span className="lp-italic">accounting</span> is a complexity problem — not an effort <span className="lp-italic">problem.</span></>
-              ) : (
-                <>La contabilidad mexicana es un problema de <span className="lp-italic">complejidad</span> — no de <span className="lp-italic">esfuerzo.</span></>
-              )}
-            </h2>
-            <p className="lp-manifesto-p">{t.manifestoP1}</p>
-            <p className="lp-manifesto-p">{t.manifestoP2}</p>
-            <p className="lp-manifesto-p">{t.manifestoP6}</p>
-            <p className="lp-manifesto-p">{t.manifestoP7}</p>
-            <p className="lp-manifesto-p">{t.manifestoP8}</p>
-            <p className="lp-manifesto-p">{t.manifestoP3}</p>
-            <p className="lp-manifesto-p">{t.manifestoP4}</p>
-            <p className="lp-manifesto-p lp-manifesto-p-dim">{t.manifestoP5}</p>
-          </div>
-
-          {/* Right image */}
-          <div className="lp-manifesto-image lp-manifesto-image-right">
-            <img src="/manifesto2.png" alt="Manifesto illustration" className="lp-manifesto-img" />
-          </div>
+        <div className="lp-manifesto-wrap">
+          <h2 className="lp-manifesto-title">
+            {lang === "en" ? (
+              <>Mexican <span className="lp-italic">accounting</span> is a complexity problem — not an effort <span className="lp-italic">problem.</span></>
+            ) : (
+              <>La contabilidad mexicana es un problema de <span className="lp-italic">complejidad</span> — no de <span className="lp-italic">esfuerzo.</span></>
+            )}
+          </h2>
+          <p className="lp-manifesto-p">{t.manifestoP1}</p>
+          <p className="lp-manifesto-p">{t.manifestoP2}</p>
+          <p className="lp-manifesto-p">{t.manifestoP6}</p>
+          <p className="lp-manifesto-p">{t.manifestoP7}</p>
+          <p className="lp-manifesto-p">{t.manifestoP8}</p>
+          <p className="lp-manifesto-p">{t.manifestoP3}</p>
+          <p className="lp-manifesto-p">{t.manifestoP4}</p>
+          <p className="lp-manifesto-p lp-manifesto-p-dim">{t.manifestoP5}</p>
         </div>
       </section>
 
@@ -451,7 +448,7 @@ export default function Landing() {
 
       {/* ── Footer ── */}
       <footer className="lp-footer">
-        <video
+        <LazyVideo
           className="lp-footer-video"
           autoPlay
           muted
@@ -690,46 +687,12 @@ export default function Landing() {
         }
 
         /* ── Manifesto ── */
-        .lp-manifesto { padding: 80px 0; overflow: hidden; }
-        .lp-manifesto-container {
-          display: flex;
-          align-items: flex-start;
-          justify-content: center;
-          max-width: 100%;
-          margin: 0 auto;
-          position: relative;
-        }
+        .lp-manifesto { padding: 80px 20px; overflow: hidden; }
         .lp-manifesto-wrap {
           max-width: 820px;
           width: 100%;
-          position: relative;
-          z-index: 10;
+          margin: 0 auto;
           padding: 0 40px;
-        }
-        .lp-manifesto-image-left,
-        .lp-manifesto-image-right {
-          width: 0;
-          position: sticky;
-          top: 50vh;
-          z-index: 0;
-        }
-        .lp-manifesto-image-left .lp-manifesto-img {
-          position: absolute;
-          right: -50px;
-          transform: translateY(-50%) rotate(-7deg);
-          width: clamp(450px, 55vw, 950px);
-          max-width: none;
-          height: auto;
-          pointer-events: none;
-        }
-        .lp-manifesto-image-right .lp-manifesto-img {
-          position: absolute;
-          left: -260px;
-          transform: translateY(-50%);
-          width: clamp(500px, 65vw, 1200px);
-          max-width: none;
-          height: auto;
-          pointer-events: none;
         }
         .lp-manifesto-title {
           margin: 0 0 48px;
@@ -919,7 +882,6 @@ export default function Landing() {
 
           .lp-manifesto { padding: 60px 16px; }
           .lp-manifesto-title { margin-bottom: 32px; }
-          .lp-manifesto-image { display: none; }
 
           .lp-security { padding: 60px 16px; }
           .lp-certifications-grid { grid-template-columns: 1fr; gap: 40px; margin-bottom: 60px; }
@@ -941,7 +903,6 @@ export default function Landing() {
           .lp-hiw-steps { grid-template-columns: 1fr; gap: 40px; }
           .lp-hiw-step { padding: 0 0 0 32px; }
           .lp-hiw-step:first-child { padding-left: 0; }
-          .lp-manifesto-image { display: none; }
           .lp-certifications-grid { grid-template-columns: repeat(2, 1fr); gap: 40px 24px; }
           .lp-security-features { grid-template-columns: repeat(2, 1fr); gap: 40px 24px; }
         }

@@ -15,15 +15,20 @@ interface CardItemProps {
 export function CardItem({ title, body, videoSrc }: CardItemProps) {
   const ref = useRef<HTMLDivElement>(null);
   const [visible, setVisible] = useState(false);
+  const [loadVideo, setLoadVideo] = useState(false);
 
   useEffect(() => {
     const el = ref.current;
     if (!el) return;
     const obs = new IntersectionObserver(
       ([entry]) => {
-        if (entry.isIntersecting) setVisible(true);
+        if (entry.isIntersecting) {
+          setVisible(true);
+          setLoadVideo(true);
+          obs.disconnect();
+        }
       },
-      { threshold: 0.15 }
+      { threshold: 0.15, rootMargin: "200px" }
     );
     obs.observe(el);
     return () => obs.disconnect();
@@ -56,7 +61,8 @@ export function CardItem({ title, body, videoSrc }: CardItemProps) {
             muted
             loop
             playsInline
-            src={videoSrc}
+            preload={loadVideo ? "auto" : "none"}
+            src={loadVideo ? videoSrc : undefined}
           />
         ) : (
           <div className="lp-card-video-placeholder" />
