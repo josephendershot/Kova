@@ -1,6 +1,7 @@
 "use client";
 
 import { useEffect, useRef, useState } from "react";
+import { track } from "@/lib/analytics";
 
 interface DemoVideoProps {
   src: string;
@@ -35,6 +36,7 @@ export function DemoVideo({
 
     try {
       await video.play();
+      track("demo_play");
     } catch {
       setActive(false);
     }
