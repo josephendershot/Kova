@@ -28,19 +28,15 @@ export function HeroVideo() {
   }, [videoSrc]);
 
   return (
-    <>
-      <img src="/portada.jpg" alt="" className="lp-hero-poster" fetchPriority="high" decoding="async" />
-      <video
-        ref={videoRef}
-        className="lp-hero-video"
-        autoPlay
-        muted
-        loop
-        playsInline
-        preload="none"
-        poster="/portada.jpg"
-        src={videoSrc ?? undefined}
-      />
-    </>
+    <video
+      ref={videoRef}
+      className="lp-hero-video"
+      autoPlay
+      muted
+      loop
+      playsInline
+      preload="none"
+      src={videoSrc ?? undefined}
+    />
   );
 }
